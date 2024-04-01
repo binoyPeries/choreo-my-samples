@@ -1,13 +1,12 @@
 import ballerina/http;
-
-service /svc on new http:Listener(9092) {
+service / on new http:Listener(9030) {
     resource function get greeting() returns string {
-        return "Hello, World!!! v1.1 9092";
+        return "Hello, World!!!";
     }
 }
 
-service /hz on new http:Listener(9094) {
+service /hz on new http:Listener(9052) {
     resource function get greeting() returns string {
-        return "Hello, health!!! v1.1 9094";
+        return "Hello, Health!!!";
     }
 }
