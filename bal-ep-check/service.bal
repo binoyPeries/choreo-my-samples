@@ -6,8 +6,8 @@ service / on new http:Listener(9099) {
     }
 }
 
-service /hzz on new http:Listener(9094) {
+service /hzz on new http:Listener(9095) {
     resource function get health() returns string {
-        return "Hello, health 9099!!!";
+        return "Hello, health 9095!!!";
     }
 }
