@@ -6,8 +6,8 @@ service /helloW on new http:Listener(9076) {
     }
 }
 
-service /hz on new http:Listener(9032) {
+service /hz on new http:Listener(9034) {
     resource function get greeting() returns string {
-        return "Hello, Health!!! 9032";
+        return "Hello, Health!!! 9034";
     }
 }
