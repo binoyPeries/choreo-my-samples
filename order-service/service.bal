@@ -1,8 +1,15 @@
 import ballerina/http;
 
-service /burger on new http:Listener(9090) {
+service /choreo_app on new http:Listener(9090) {
 
-    resource function get 'order() returns string|error {
-        return "burgernew 9090 v2.0";
+    resource function get test1() returns string|error {
+        return "test 1 with 9090";
+    }
+}
+
+service /choreo_app on new http:Listener(9091) {
+
+    resource function get test2() returns string|error {
+        return "test 2 with 9091";
     }
 }
