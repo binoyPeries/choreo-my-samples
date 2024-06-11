@@ -7,7 +7,7 @@ service /choreo_app on new http:Listener(9090) {
     }
 }
 
-service /choreo_app on new http:Listener(9091) {
+service /choreo_app2 on new http:Listener(9091) {
 
     resource function get test2() returns string|error {
         return "test 2 with 9091";
