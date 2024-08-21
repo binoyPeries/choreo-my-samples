@@ -9,3 +9,12 @@ endpoints:
     networkVisibilities:
       - Public
     schemaFilePath: openapi.yaml
+  - name: hello-welcome-svc
+    displayName: Welcome Service
+    service:
+      basePath: /hello
+      port: 8089
+    type: REST
+    networkVisibilities:
+      - Public
+    schemaFilePath: openapi.yaml
