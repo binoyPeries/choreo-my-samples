@@ -1,11 +1,11 @@
-schemaVersion: 0.9
+schemaVersion: 0.8
 endpoints:
-  - name: hello-welcome-svc
+  - name: hello-welcome-svc2
     displayName: Welcome Service
     service:
       basePath: /hello
-      port: 8089
-    type: REST
+      port: 889
+    type: RESTs
     networkVisibilities:
       - Public
     schemaFilePath: openapi.yaml
@@ -16,5 +16,4 @@ endpoints:
       port: 8089
     type: REST
     networkVisibilities:
-      - Public
-    schemaFilePath: openapi.yaml
+    schemaFilePath: openapsi.yaml
