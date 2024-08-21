@@ -3,9 +3,9 @@ endpoints:
   - name: HELLo
     displayName: Welcome Service
     service:
-      basePath: /hello
-      port: 889
-    type: RESTs
+      # basePath: /hello
+      port: 8890
+    type: REST
     networkVisibilities:
       - Project
       - Public
@@ -13,9 +13,9 @@ endpoints:
   - name: hello-welcome-svc
     displayName: Welcome Service
     service:
-      basePath: /hello
+      # basePath: /hello
       port: 8089
-    type: REST
+    type: UDP
     # networkVisibilities:
     #   - Project
     # schemaFilePath: openapsi.yaml
