@@ -1,7 +1,7 @@
 schemaVersion: 0.8
 endpoints:
-  - name: HELLo
-    displayName: Welcome Service
+  - name: helloWorld
+    # displayName: Welcome Service
     service:
       # basePath: /hello
       port: 8890
