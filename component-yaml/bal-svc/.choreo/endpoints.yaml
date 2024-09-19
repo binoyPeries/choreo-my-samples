@@ -3,7 +3,7 @@ version: 1.0.0
 endpoints:
   - name: Greeting Service
     port: 9099
-    type: WSs
+    type: WS
     networkVisibility: Organization
     context: /gree_ti-ng
     schemaFilePath: openapi.yaml
