@@ -1,4 +1,4 @@
-schemaVersion: 0.9
+schemaVersion: 0.8
 endpoints:
   - name: hello-s vc1
     displayName: hello v1
