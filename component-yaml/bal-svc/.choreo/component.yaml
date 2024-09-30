@@ -8,7 +8,7 @@ endpoints:
     type: TCP
     # networkVisibilities:
     #   - Public
-    schemaFilePath: openapi.yaml
+    # schemaFilePath: openapi.yaml
   - name: hel88lo-sv_c1
     displayName: hello
     service:
@@ -19,7 +19,7 @@ endpoints:
       - Public
       - Organization
       - Project
-    schemaFilePath: openapi.yaml
+    schemaFilePath: openapis.yaml
 dependencies:
   serviceReferences:
     # +required Name of the service reference.
