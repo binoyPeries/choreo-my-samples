@@ -9,6 +9,15 @@ endpoints:
     networkVisibilities:
       - Public
     schemaFilePath: openapi.yaml
+  - name: hel88lo-sv_c1
+    displayName: hello
+    service:
+      basePath: /hellov2
+      port: 8090
+    type: REST
+    networkVisibilities:
+      - Public
+    schemaFilePath: openapi.ya
 dependencies:
   serviceReferences:
     # +required Name of the service reference.
