@@ -3,29 +3,22 @@ endpoints:
   - name: hello-svc
     displayName: hello
     service:
-      # basePath: /hEl-l_o/v2
+      basePath: /hEl-l_o/v2
       port: 9090
     type: TCP
-    networkVisibilities:
-      - Public
+    # networkVisibilities:
+    #   - Public
     schemaFilePath: openapi.yaml
   - name: hel88lo-sv_c1
     displayName: hello
     service:
-      # basePath: /he\llov2
+      basePath: /he\llov2
       port: 8090
     type: UDP
     networkVisibilities:
       - Public
-    schemaFilePath: openapi.yaml
-  - name: hel88lo-sv_c1
-    displayName: hello
-    service:
-      # basePath: /he\llov2
-      port: 8090
-    type: GRPC
-    networkVisibilities:
-      - Public
+      - Organization
+      - Project
     schemaFilePath: openapi.yaml
 dependencies:
   serviceReferences:
