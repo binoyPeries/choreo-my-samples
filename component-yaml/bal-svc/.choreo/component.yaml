@@ -1,7 +1,7 @@
 schemaVersion: 1.0
 endpoints:
-  - name: hel88lo-sv_c1
-    #   displayName: hello
+  - name: hello-svc
+    displayName: hello djnajd dxjadjaw dwijndoiqwjniodnx doijwojdioawjdij'aDJIAJS'DJASIJD
     service:
       basePath: /hellov2
       port: 8090
@@ -17,7 +17,7 @@ endpoints:
     type: REST
     networkVisibilities:
       - Public
-    schemaFilePath: openapi.ya
+    schemaFilePath: openapi.yaml
 dependencies:
   serviceReferences:
     # +required Name of the service reference.
