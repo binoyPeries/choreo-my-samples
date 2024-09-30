@@ -1,10 +1,10 @@
 schemaVersion: 1.0
 endpoints:
   - name: hello-svc
-    displayName: hello djnajd dxjadjaw dwijndoiqwjniodnx doijwojdioawjdij'aDJIAJS'DJASIJD
+    displayName: hello 
     service:
       basePath: /hellov2
-      port: 8090
+      port: 1009090
     type: REST
     networkVisibilities:
       - Public
