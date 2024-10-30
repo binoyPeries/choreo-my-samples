@@ -12,9 +12,8 @@ endpoints:
   - name: hel88lo-sv_c1
     displayName: hello
     service:
-      basePath: /hellov2
       port: 8090
-    type: UDP
+    type: REST
     networkVisibilities:
       - Public
       - Organization
