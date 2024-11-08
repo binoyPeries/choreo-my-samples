@@ -2,8 +2,8 @@
 version: 1.0.0
 endpoints:
   - name: Greeting Service
-    port: 9099
-    type: WS
+    port: 8090
+    type: REST
     networkVisibility: Organization
-    context: /gree_ti-ng
+    context: /hello
     schemaFilePath: openapi.yaml
