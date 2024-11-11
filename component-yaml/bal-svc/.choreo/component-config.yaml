@@ -37,29 +37,29 @@ spec:
       # The path should be relative to the Docker context.
       schemaFilePath: heelo/openapi.yaml
   # # +optional Outgoing connection details for the component.
-  outbound:
-    # +optional Defines the service references from the Internal Marketplace.
-    serviceReferences:
-      # +required Name of the service reference.
-      - name: database:apifirst/mttm/mmvhxd/ad088/v1.0/PUBLICs
-        # +required Name of the connection instance.
-        connectionConfig: 19d2648b-d29c-4452-afdd-1b9311e8142
-        # +optional Environment variables injected to the component for connection configuration.
-        env:
-          # +required Key name of the connection configuration.
-          - from: ServiceURL
-            # +required Environment variable injected to the container.
-            to: SERVICE_URL
-      # +required Name of the service reference.
-      - name: thirdparty:apifirst/mttm/mmvhxd/v1.0/PUBLIC
-        # +required Name of the connection instance.
-        connectionConfig: 18a2648b-d29c-4452-afdd-1b9311e8142
-        # +optional Environment variables injected to the component for connection configuration.
-        env:
-          # +required Key name of the connection configuration.
-          - from: ServiceURLqwe
-            # +required Environment variable injected to the container.
-            to: SERVICE_URL
-          - from: url2
-            # +required Environment variable injected to the container.
-            to: sajdlkasodjssljasjd
+  # outbound:
+  #   # +optional Defines the service references from the Internal Marketplace.
+  #   serviceReferences:
+  #     # +required Name of the service reference.
+  #     - name: database:apifirst/mttm/mmvhxd/ad088/v1.0/PUBLICs
+  #       # +required Name of the connection instance.
+  #       connectionConfig: 19d2648b-d29c-4452-afdd-1b9311e8142
+  #       # +optional Environment variables injected to the component for connection configuration.
+  #       env:
+  #         # +required Key name of the connection configuration.
+  #         - from: ServiceURL
+  #           # +required Environment variable injected to the container.
+  #           to: SERVICE_URL
+  #     # +required Name of the service reference.
+  #     - name: thirdparty:apifirst/mttm/mmvhxd/v1.0/PUBLIC
+  #       # +required Name of the connection instance.
+  #       connectionConfig: 18a2648b-d29c-4452-afdd-1b9311e8142
+  #       # +optional Environment variables injected to the component for connection configuration.
+  #       env:
+  #         # +required Key name of the connection configuration.
+  #         - from: ServiceURLqwe
+  #           # +required Environment variable injected to the container.
+  #           to: SERVICE_URL
+  #         - from: url2
+  #           # +required Environment variable injected to the container.
+  #           to: sajdlkasodjssljasjd
