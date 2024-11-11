@@ -1,0 +1,12 @@
+schemaVersion: "1.1"
+endpoints:
+    - name: Greeting-Service-88e
+      displayName: Greeting Service
+      service:
+        basePath: /hello
+        port: 8090
+      type: REST
+      networkVisibilities:
+        - Project
+        - Organization
+      schemaFilePath: openapi.yaml
