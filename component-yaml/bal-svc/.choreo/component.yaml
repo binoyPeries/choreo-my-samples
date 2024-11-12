@@ -1,6 +1,6 @@
-schemaVersion: "1.0"
+schemaVersion: "1.1"
 endpoints:
-    - name: Greeting-Service-ded
+    - name: greeting-service-ded
       displayName: Greeting Service
       service:
         basePath: /gree-t_i/ng
@@ -10,7 +10,7 @@ endpoints:
         - Project
         - Public
       schemaFilePath: openapi.yaml
-    - name: Greeting-Service-health-f6c
+    - name: greeting-service-health-f6c
       displayName: Greeting Service health
       service:
         basePath: /greeter/hz
