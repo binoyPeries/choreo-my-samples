@@ -1,4 +1,4 @@
-apiVersion: core.choreo.dev/v1beta1w
+apiVersion: core.choreo.dev/v1beta1
 kind: ComponentConfig
 spec:
   # +optional Incoming connection details for the component (AKA endpoints).
