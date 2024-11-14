@@ -1,45 +1,12 @@
-schemaVersion: "1.0"
+schemaVersion: "1.1"
 endpoints:
-    - name: greeting-service-ded
+    - name: greeting-service-88e
       displayName: Greeting Service
       service:
-        basePath: /gree-t_i/ng
-        port: 9090
-      type: REST
-      networkVisibilities:
-        - Project
-        - Public
-      schemaFilePath: openapi.yaml
-    - name: greeting-service-health-f6c
-      displayName: Greeting Service health
-      service:
-        basePath: /greeter/hz
-        port: 9093
+        basePath: /hello
+        port: 8090
       type: REST
       networkVisibilities:
         - Project
         - Organization
       schemaFilePath: openapi.yaml
-    - name: greeting-service-v2-0a2
-      displayName: Greeting Service v2
-      service:
-        basePath: /greeter/hz
-        port: 9095
-      type: REST
-      networkVisibilities:
-        - Project
-      schemaFilePath: openapi.yaml
-dependencies:
-    serviceReferences:
-        - name: database:apifirst/mttm/mmvhxd/38636hdshs
-          connectionConfig: e4c26bd9-7905-43d5-b7fd-ace534ef6139
-          env:
-            - from: ServiceURL
-              to: SERVICE_URL
-        - name: database:apifirst/mttm/mmvhxd/PUBLIC
-          connectionConfig: 108174fb-7331-49da-85db-4e442ab18ed7
-          env:
-            - from: ServiceURLqwe
-              to: SERVICE_URL
-            - from: url2
-              to: sajdlkasodjssljasjd
