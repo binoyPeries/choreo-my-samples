@@ -4,9 +4,9 @@ endpoints:
       displayName: Greeting Service
       service:
         basePath: /hello
-        port: 8090
+        port: 8091
       type: REST
       networkVisibilities:
         - Project
-        - Organization
+        - Public
       schemaFilePath: openapi.yaml
