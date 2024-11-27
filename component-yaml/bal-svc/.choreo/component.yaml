@@ -1,4 +1,4 @@
-schemaVersion: 1.1
+schemaVersion: 1.0
 endpoints:
     - name: greeting-service-88e
       displayName: Greeting Service
