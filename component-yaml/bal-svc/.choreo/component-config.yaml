@@ -36,28 +36,3 @@ spec:
       # This is only applicable to REST endpoint types.
       # The path should be relative to the Docker context.
       schemaFilePath: openapi.yaml
-  # # +optional Outgoing connection details for the component.
-  outbound:
-    # +optional Defines the service references from the Internal Marketplace.
-    serviceReferences:
-      # +required Name of the service reference.
-      - name: database:apifirst/mttm/mmvhxd/38636hdshs
-        # +required Name of the connection instance.
-        connectionConfig: e4c26bd9-7905-43d5-b7fd-ace534ef6139
-        # +optional Environment variables injected to the component for connection configuration.
-        env:
-          # +required Key name of the connection configuration.
-          - from: ServiceURL
-            # +required Environment variable injected to the container.
-            to: SERVICE_URL
-      # +required Name of the service reference.
-      - name: database:apifirst/mttm/mmvhxd/PUBLIC
-        # +required Name of the connection instance.
-        connectionConfig: 108174fb-7331-49da-85db-4e442ab18ed7
-        # +optional Environment variables injected to the component for connection configuration.
-        env:
-          # +required Key name of the connection configuration.
-          - from: ServiceURLqwe
-            to: SERVICE_URL
-          - from: url2
-            to: sajdlkasodjssljasjd
