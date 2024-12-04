@@ -1,4 +1,4 @@
-apiVersion: core.choreo.dev/v1beta1w
+apiVersion: core.choreo.dev/v1beta1
 kind: ComponentConfig
 spec:
   # +optional Incoming connection details for the component (AKA endpoints).
@@ -25,9 +25,9 @@ spec:
     # +optional Defines the service references from the Internal Marketplace.
     serviceReferences:
       # +required Name of the service reference.
-      - name: database:/apifirst/mttm/mmvhxd/ad088/v1.0/PUBLICs
+      - name: choreo:///apifirst/mttm/mmvhxd/ad088/v1.0/PUBLIC
         # +required Name of the connection instance.
-        connectionConfig: 19d2648b-d29c-4452-afdd-1b9311e8142
+        connectionConfig: 90B22969-5C1E-49DA-B5AD-1932FC98958B
         # +optional Environment variables injected to the component for connection configuration.
         env:
           # +required Key name of the connection configuration.
