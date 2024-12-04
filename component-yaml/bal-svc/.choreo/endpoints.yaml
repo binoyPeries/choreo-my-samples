@@ -1,7 +1,8 @@
-# version: 1.0
+version: 1.0
 endpoints:
-  - port: 809000
-    type: RESTs
-    networkVisibility: Organizations
-    context: /hello*
-    schemaFilePath: openapis.yaml
+  - name: "name"
+    port: 809
+    type: REST
+    networkVisibility: Organization
+    context: /hello_/sjks
+    schemaFilePath: openapi.yaml
