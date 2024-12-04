@@ -25,12 +25,19 @@ spec:
     # +optional Defines the service references from the Internal Marketplace.
     serviceReferences:
       # +required Name of the service reference.
-      - name: choreo:///apifirst/mttm/mmvhxd/ad088/v1.0/PUBLIC
+      - name: choreo:///apifirst/mttm/mmvhxd/ad088/v1.0/PUBLI
         # +required Name of the connection instance.
-        connectionConfig: 90B22969-5C1E-49DA-B5AD-1932FC98958B
+        connectionConfig: 90B22969-5C1E-49DA-B5AD-1932FC98958
         # +optional Environment variables injected to the component for connection configuration.
         env:
           # +required Key name of the connection configuration.
           - from: ServiceURL
-            # +required Environment variable injected to the container.
+      - name: database:///apifirst/mttm/mmvhxd/ad088/v1.0/PUBLI
+        # +required Name of the connection instance.
+        connectionConfig: 90B22969-5C1E-49DA-B5AD-1932FC98958
+        # +optional Environment variables injected to the component for connection configuration.
+        env:
+          # +required Key name of the connection configuration.
+          - from: ServiceURL
             to: SERVICE_URL
+
