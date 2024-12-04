@@ -1,8 +1,7 @@
-version: 1.0
+# version: 1.0
 endpoints:
-  - name: Greeting Service
-    port: 8090
-    type: REST
-    networkVisibility: Organization
-    context: /hello
-    schemaFilePath: openapi.yaml
+  - port: 809000
+    type: RESTs
+    networkVisibility: Organizations
+    context: /hello*
+    schemaFilePath: openapis.yaml
