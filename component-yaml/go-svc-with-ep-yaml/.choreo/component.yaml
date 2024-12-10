@@ -1,0 +1,12 @@
+schemaVersion: "1.1"
+endpoints:
+    - name: hello-welcome-svc-1da
+      displayName: Hello Welcome Svc
+      service:
+        basePath: /
+        port: 9092
+      type: REST
+      networkVisibilities:
+        - Project
+        - Public
+      schemaFilePath: openapi.yaml
