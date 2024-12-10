@@ -35,6 +35,9 @@ func main() {
 	serverMux := http.NewServeMux()
 	serverMux.HandleFunc("/hello/welcome", greet)
 
+	serverMux2 := http.NewServeMux()
+	serverMux2.HandleFunc("/hello/user", greet2)
+
 	serverPort := 9092
 	server := http.Server{
 		Addr:    fmt.Sprintf(":%d", serverPort),
@@ -43,6 +46,19 @@ func main() {
 	go func() {
 		log.Printf("Starting HTTP Greeter on port %d\n", serverPort)
 		if err := server.ListenAndServe(); !errors.Is(err, http.ErrServerClosed) {
+			log.Fatalf("HTTP ListenAndServe error: %v", err)
+		}
+		log.Println("HTTP server stopped serving new requests.")
+	}()
+
+	serverPort2 := 9093
+	server2 := http.Server{
+		Addr:    fmt.Sprintf(":%d", serverPort2),
+		Handler: serverMux2,
+	}
+	go func() {
+		log.Printf("Starting HTTP Greeter on port %d\n", serverPort2)
+		if err := server2.ListenAndServe(); !errors.Is(err, http.ErrServerClosed) {
 			log.Fatalf("HTTP ListenAndServe error: %v", err)
 		}
 		log.Println("HTTP server stopped serving new requests.")
@@ -64,4 +80,8 @@ func main() {
 
 func greet(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello Welcome, svc with yaml")
+}
+
+func greet2(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello User, svc with yaml")
 }
