@@ -10,3 +10,30 @@ endpoints:
         - Project
         - Organization
       schemaFilePath: openapi.yaml
+    - name: greeting-service-88e
+      displayName: Greeting Service
+      service:
+        basePath: /hello
+        port: 8090
+      type: GRPC
+      networkVisibilities:
+        - Public
+      schemaFilePath: openapi.yaml
+    - name: greeting-service-88e
+      displayName: Greeting Service
+      service:
+        basePath: /hello
+        port: 8090
+      type: TCP
+      networkVisibilities:
+        - Organization
+      schemaFilePath: openapi.yaml
+    - name: greeting-service-88e
+      displayName: Greeting Service
+      service:
+        basePath: /hello
+        port: 8090
+      type: TCP
+      networkVisibilities:
+        - Project
+      schemaFilePath: openapi.yaml
