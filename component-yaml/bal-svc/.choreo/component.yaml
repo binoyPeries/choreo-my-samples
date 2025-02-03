@@ -5,7 +5,7 @@ endpoints:
       service:
         basePath: /hello
         port: 8090
-      type: REST
+      type: UDP
       networkVisibilities:
         - Project
         - Organization
