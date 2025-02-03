@@ -10,7 +10,7 @@ endpoints:
         - Project
         - Organization
       schemaFilePath: openapi.yaml
-    - name: greeting-service-88e
+    - name: greeting-service-88e1
       displayName: Greeting Service
       service:
         basePath: /hello
@@ -19,7 +19,7 @@ endpoints:
       networkVisibilities:
         - Public
       schemaFilePath: openapi.yaml
-    - name: greeting-service-88e
+    - name: greeting-service-88e2
       displayName: Greeting Service
       service:
         basePath: /hello
@@ -28,7 +28,7 @@ endpoints:
       networkVisibilities:
         - Organization
       schemaFilePath: openapi.yaml
-    - name: greeting-service-88e
+    - name: greeting-service-88e3
       displayName: Greeting Service
       service:
         basePath: /hello
