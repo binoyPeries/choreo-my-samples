@@ -5,27 +5,9 @@ endpoints:
       service:
         basePath: /hello
         port: 8090
-      type: UDP
+      type: REST
       networkVisibilities:
         - Project
-        - Organization
-      schemaFilePath: openapi.yaml
-    - name: greeting-service-88e1
-      displayName: Greeting Service
-      service:
-        basePath: /hello
-        port: 8090
-      type: GRPC
-      networkVisibilities:
-        - Public
-      schemaFilePath: openapi.yaml
-    - name: greeting-service-88e2
-      displayName: Greeting Service
-      service:
-        basePath: /hello
-        port: 8090
-      type: TCP
-      networkVisibilities:
         - Organization
       schemaFilePath: openapi.yaml
     - name: greeting-service-88e3
