@@ -1,5 +1,34 @@
 schemaVersion: "1.1"
 endpoints:
+    - name: hello-welcome-svc
+      displayName: Hello Welcome Svc
+      service:
+        basePath: /
+        port: 9092
+      type: UDP
+      networkVisibilities:
+        - Project
+        - Public
+      schemaFilePath: openapi.yaml
+    - name: hello-welcome-svc-1da
+      displayName: Hello Welcome Svc
+      service:
+        basePath: /
+        port: 9092
+      type: TCP
+      networkVisibilities:
+        - Public
+      schemaFilePath: openapi.yaml
+    - name: hello-welcome-svc-1da
+      displayName: Hello Welcome Svc
+      service:
+        basePath: /
+        port: 9092
+      type: GRPC
+      networkVisibilities:
+        - Public
+        - Organization
+      schemaFilePath: openapi.yaml
     - name: hello-welcome-svc-1da
       displayName: Hello Welcome Svc
       service:
@@ -8,5 +37,4 @@ endpoints:
       type: REST
       networkVisibilities:
         - Project
-        - Public
       schemaFilePath: openapi.yaml
