@@ -19,7 +19,7 @@ endpoints:
       networkVisibilities:
         - Public
       schemaFilePath: openapi.yaml
-    - name: hello-welcome-svc-1da
+    - name: hello-welcome-svc-1da2
       displayName: Hello Welcome Svc
       service:
         basePath: /
@@ -29,7 +29,7 @@ endpoints:
         - Public
         - Organization
       schemaFilePath: openapi.yaml
-    - name: hello-welcome-svc-1da
+    - name: hello-welcome-svc-1da3
       displayName: Hello Welcome Svc
       service:
         basePath: /
