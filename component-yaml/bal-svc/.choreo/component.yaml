@@ -44,3 +44,6 @@ configuration:
         connectionRef:
           name: testBinoyConnnsje
           key: ServiceURLss
+proxy:
+  type: REST
+  schemaFilePath: openapi.yaml
