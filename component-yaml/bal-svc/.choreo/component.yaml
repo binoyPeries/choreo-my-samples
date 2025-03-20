@@ -47,3 +47,5 @@ configuration:
 proxy:
   type: REST
   schemaFilePath: openapi.yaml
+  thumbnailPath: sajsjmnajdn
+  docPath: dsajndjkaksd
