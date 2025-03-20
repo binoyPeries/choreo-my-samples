@@ -37,7 +37,7 @@ configurations:
         connectionRef:
           name: testBinoyConnn
           key: ServiceURL
-configurations:
+configuration:
   env:
     - name: HR_SERVICE_URLV@
       valueFrom:
