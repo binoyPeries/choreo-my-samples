@@ -4,6 +4,6 @@ endpoints:
   - name: Greeting Service
     port: 8090
     type: REST
-    networkVisibility: Organization
-    context: /hello
+    networkVisibility: Public
+    context: /hellov2
     schemaFilePath: openapi.yaml
