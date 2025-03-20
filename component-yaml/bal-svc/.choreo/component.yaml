@@ -1,12 +1,39 @@
 schemaVersion: "1.1"
 endpoints:
-    - name: greeting-service-e04
-      displayName: Greeting Service
-      service:
-        basePath: /hello
-        port: 8091
-      type: REST
-      networkVisibilities:
-        - Project
-        - Organization
-      schemaFilePath: openapi.yaml
+  - name: go-greeter-803
+    displayName: Go Greeter
+    service:
+      basePath: /
+      port: 9090
+    type: REST
+    networkVisibilities:
+      - Project
+      - Public
+    schemaFilePath: openapi.yaml
+dependencies:
+  connectionReferences:
+    - name: testBinoyConnn
+      resourceRef: service:/iasf/publishercomponent1-lx/v1/8b1c3/PUBLIC
+    - name: autotestconnection31t1742448034585
+      resourceRef: service:/1autotest1742447431702/autotest21t1742447693986/v1/5c69c/PUBLIC
+  serviceReferences:
+    - name: choreo:///choreointegrationtestsuserdevdlwqo/1autotest1742447431702/autotest21t1742447693986/5c69c/v1/PUBLIC
+      connectionConfig: 01f0054b-0c90-1fd6-8780-ea54207ca479
+      env:
+      - from: ServiceURL
+        to: MY_SERVICE_URL
+      - from: ConsumerKey
+        to: MY_CONSUMER_KEY
+      - from: ConsumerSecret
+        to: MY_CONSUMER_SECRET
+      - from: TokenURL
+        to: MY_TOKEN_URL
+      - from: ChoreoAPIKey
+        to: MY_CHOREO_API_KEY
+configurations:
+  env:
+    - name: HR_SERVICE_URL
+      valueFrom:
+        connectionRef:
+          name: testBinoyConnn
+          key: ServiceURL
