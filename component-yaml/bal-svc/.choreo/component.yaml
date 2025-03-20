@@ -1,6 +1,6 @@
-schemaVersion: 1.1
+schemaVersion: "1.1"
 endpoints:
-    - name: greeting-service-88e
+    - name: greeting-service-e04
       displayName: Greeting Service
       service:
         basePath: /hello
@@ -8,5 +8,5 @@ endpoints:
       type: REST
       networkVisibilities:
         - Project
-        - Public
+        - Organization
       schemaFilePath: openapi.yaml
