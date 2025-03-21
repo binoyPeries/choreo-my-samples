@@ -1,11 +1,12 @@
-schemaVersion: 1.1
+schemaVersion: "1.1"
 endpoints:
-    - name: greeting-service
+    - name: greeting-service-c42
       displayName: Greeting Service
       service:
         basePath: /hellov2
         port: 8090
       type: REST
       networkVisibilities:
+        - Project
         - Public
       schemaFilePath: openapi.yaml
