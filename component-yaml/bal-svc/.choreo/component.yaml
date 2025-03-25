@@ -1,4 +1,4 @@
-schemaVersion: 1.2
+schemaVersion: "1.1"
 endpoints:
     - name: greeting-service-c42
       displayName: Greeting Service
